@@ -1,13 +1,13 @@
-package Css_Assignments;
+package Xpath_Assignment;
 
 import Utlity.BaseDriver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Assignment1 extends BaseDriver {
+public class Assigment1 extends BaseDriver {
+
     @Test
     public void Test1() {
 
@@ -21,18 +21,18 @@ public class Assignment1 extends BaseDriver {
 //        8) Email'in, "Testing"ı içinde bulundurduğunu doğrulayın.
 
         driver.get("http://demoqa.com/text-box");
-        WebElement fullName = driver.findElement(By.cssSelector("input[id='userName']"));
+        WebElement fullName = driver.findElement(By.xpath("//input[@id='userName']"));
         fullName.sendKeys("Automation");
-        WebElement email = driver.findElement(By.cssSelector("input[id='userEmail']"));
+        WebElement email = driver.findElement(By.xpath("//input[@id='userEmail']"));
         email.sendKeys("Testing@gmail.com");
-        WebElement curAddress = driver.findElement(By.cssSelector("textarea[id='currentAddress']"));
+        WebElement curAddress = driver.findElement(By.xpath("//textarea[@id='currentAddress']"));
         curAddress.sendKeys("Testing Current Address");
-        WebElement perAddress = driver.findElement(By.cssSelector("textarea[id='permanentAddress']"));
+        WebElement perAddress = driver.findElement(By.xpath("//textarea[@id='permanentAddress']"));
         perAddress.sendKeys("Testing Permanent Address");
-        WebElement subBtn = driver.findElement(By.cssSelector("div>button[id='submit'][class='btn btn-primary']"));
+        WebElement subBtn = driver.findElement(By.xpath("//button[@id='submit']"));
         subBtn.click();
-        WebElement fullNameMsg = driver.findElement(By.cssSelector("div>p[id='name']"));
-        WebElement emailMsg = driver.findElement(By.cssSelector("div>p[id='email']"));
+        WebElement fullNameMsg = driver.findElement(By.xpath("//p[@id='name']"));
+        WebElement emailMsg = driver.findElement(By.xpath("//p[@id='email']"));
 
 
         Assert.assertTrue("Axtarilan userName tapilmadi", fullNameMsg.getText().contains("Automation"));
