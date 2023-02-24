@@ -1,4 +1,4 @@
-package Gun04;
+package Gun02;
 
 
 import Utlity.MyFunc;
@@ -22,7 +22,7 @@ public class _03_FindingByIdNotFoundException {
             System.out.println("WebElement bulunamadı "+ex.getMessage());
         }
 
-        MyFunc.Bekle(3);
+        MyFunc.Wait(3);
         driver.quit();
 
     }

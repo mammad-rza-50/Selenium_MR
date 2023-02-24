@@ -3,6 +3,10 @@ package Utlity;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriverService;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariDriverService;
 
 import java.time.Duration;
 import java.util.logging.Level;
@@ -10,21 +14,26 @@ import java.util.logging.Logger;
 
 
 public class BaseDriver {
+
      public static WebDriver driver;
 
     static
     {
-        KalanOncekileriKapat();
+        RemainingPreviousClose();
 
         Logger logger= Logger.getLogger(""); // output a ait bütün logları üreten objeye/servise ulaştım ""
         logger.setLevel(Level.SEVERE); // Sadece errorları göster
 
         // outputtaki gerekmeyen logları kaldıracağız
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+      //  System.setProperty(EdgeDriverService.EDGE_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
+      //  System.setProperty(SafariDriverService.SAFARI_DRIVER_EXE_PROPERTY,"true");
 
         driver = new ChromeDriver();
+       // driver=new EdgeDriver();
+       // driver=new SafariDriver();
 
-        //driver.manage().window().maximize(); // Ekranı max yapıyor.
+       // driver.manage().window().maximize(); // Ekranı max yapıyor.
 
         Duration dr=Duration.ofSeconds(30);
         driver.manage().timeouts().pageLoadTimeout(dr);
@@ -39,14 +48,14 @@ public class BaseDriver {
 
 
 
-    public static void BekleKapat()
+    public static void WaitClose()
     {
-        MyFunc.Bekle(3);
+        MyFunc.Wait(3);
         driver.quit();
     }
 
 
-    public static void KalanOncekileriKapat() {
+    public static void RemainingPreviousClose() {
 
         try {
             Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");

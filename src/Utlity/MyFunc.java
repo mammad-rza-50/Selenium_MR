@@ -3,7 +3,7 @@ package Utlity;
 public class MyFunc {
 
 
-    public static void Bekle(int sn)
+    public static void Wait(int sn)
     {
         try {
             Thread.sleep(1000*sn); // ms beklediği

@@ -1,4 +1,4 @@
-package Gun05;
+package Gun03;
 
 import Utlity.BaseDriver;
 import org.openqa.selenium.By;
@@ -22,6 +22,6 @@ public class _03_GetCssValue extends BaseDriver {
         System.out.println( " getCssValue(font-size)= "+ inputValEnter.getCssValue("font-size"));
         System.out.println( " getCssValue(background)= "+ inputValEnter.getCssValue("background"));
 
-        BekleKapat();
+        WaitClose();
     }
 }

@@ -1,4 +1,4 @@
-package Gun04;
+package Gun02;
 
 import Utlity.MyFunc;
 import org.openqa.selenium.By;
@@ -24,7 +24,7 @@ public class _06_FindingByLinkText {
         WebElement link2= driver.findElement(By.partialLinkText("Süper Fiyat")); // görünen link text inin bir parçası verilebiliyor
         System.out.println("link2.getText() = " + link2.getText());
 
-        MyFunc.Bekle(3);
+        MyFunc.Wait(3);
         driver.quit();
     }
 }

@@ -1,0 +1,53 @@
+interviewlarda kaç çeşit xpath vardır şeklinde soru gelebilir.
+
+           Absolute Xpath deniyor.
+           /html/body/div[2]/div/div/div/form/input
+           1- / başlıyor.
+           2- En baştan HTML den başlyarak bir yol bulur.Araya başka eleman girdiğinde yol kaybolur.
+           Bu yüzden kullanışsızdır.
+
+           Relative Xpath denir.
+           //*[@id='login-button']
+            1- // başlıyor.
+            2- Elemanı direk bulur, baştan itibaren diğer elemanlara bağlı kalmaz.
+
+           findEmelent(By.xpath(""));
+
+CSS                    XPATH
+ile başlayan  id^      //[start-with(@id,'u_')]
+ile biten     id$      //[ends-with(@id,'4545')]
+içinde geçen  id*      //*[contains(@id,'u')]
+
+
+           CSS                         XPATH
+           [id='msg'][value='Good']    //*[@id='msg' and @value='Good']
+
+
+CSS                             XPATH
+>      -> cocuklar              /
+space  -> tüm cocuklar          //
++      -> bitişik kardeş        following-sibling::
+~      -> tüm kardeşler         following::
+
+XPATH in CSS den üstünlüğü
+/..                          -> parent e gider
+//*[ text()='merhaba dünya']  -> görünen yazısı ile bulma
+
+//*[ contains( text(), 'merhaba' ) ] -> görünen yazısında merhaba geçen
+
+
+bütün sayfada bulunan çoklu locatorlarda hangi eleman istenirse onu bulma
+(//*[@id='user-message'])[1]
+
+// CSS deki nth-child  ın XPATH deki karşılığı
+//ul[@class='nav navbar-nav']/li[2]
+
+//bir üste parente gitme /..
+//label[text()='Enter message']/../..
+
+**********************************************
+getText  ile  getAttribute("value");  farkı
+
+<p> merhaba dünya </p>   -> ekranda gözken yazısı : merhaba dünya   getText() : tag lerin arasında kalanı alırsın
+
+<input type="text" value="merhaba dünya" />         getAttribute("value");

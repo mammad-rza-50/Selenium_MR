@@ -1,4 +1,4 @@
-package Gun04;
+package Gun02;
 
 import Utlity.MyFunc;
 import org.openqa.selenium.By;
@@ -28,7 +28,7 @@ public class _05_FindingByClassName {
         // aranılan eleman bulunamazsa : findElement NoSuchElement hatası veriri
         // findElements is size ı 0 olan List verir, yani hata vermez.
 
-        MyFunc.Bekle(3);
+        MyFunc.Wait(3);
         driver.quit();
     }
 }

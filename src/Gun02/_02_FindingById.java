@@ -1,4 +1,4 @@
-package Gun04;
+package Gun02;
 
 import Utlity.MyFunc;
 import org.openqa.selenium.By;
@@ -18,7 +18,7 @@ public class _02_FindingById {
         WebElement soyadKutusu=driver.findElement(By.id("last_8"));
         soyadKutusu.sendKeys("temur");
 
-        MyFunc.Bekle(2);
+        MyFunc.Wait(2);
 //        isimKutusu.clear();
 //        soyadKutusu.clear();
 
@@ -36,7 +36,7 @@ public class _02_FindingById {
         WebElement submitButton=driver.findElement(By.id("input_2"));
         submitButton.click();
 
-        MyFunc.Bekle(3);
+        MyFunc.Wait(3);
         driver.quit();
     }
 }

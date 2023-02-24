@@ -1,4 +1,4 @@
-package Gun04;
+package Gun02;
 
 import Utlity.MyFunc;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +23,7 @@ public class _01_OpeningWebsite {
 //
 //        for döngüsü ile kontrol et.
 
-        MyFunc.Bekle(5);
+        MyFunc.Wait(5);
         driver.quit();
     }
 }

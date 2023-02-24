@@ -1,4 +1,4 @@
-package Gun04;
+package Gun02;
 
 import Utlity.MyFunc;
 import org.openqa.selenium.By;
@@ -14,7 +14,7 @@ public class _04_FindingByName {
         WebElement ad=driver.findElement(By.name("q8_name[first]"));
         ad.sendKeys("ismet");
 
-        MyFunc.Bekle(3);
+        MyFunc.Wait(3);
         driver.quit();
     }
 }

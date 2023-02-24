@@ -1,4 +1,4 @@
-package Gun05;
+package Gun03;
 
 import Utlity.BaseDriver;
 import org.openqa.selenium.By;
@@ -23,7 +23,7 @@ public class _01_FindingElements_tag extends BaseDriver {
             }
         }
 
-         BekleKapat();
+         WaitClose();
     }
 
 
