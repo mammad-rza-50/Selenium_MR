@@ -7,7 +7,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Senari extends BaseDriver {
+import java.util.List;
+
+public class Scenario extends BaseDriver {
 
 //    1- https://www.saucedemo.com/
 //    2- login işlemini yapınız.
@@ -22,7 +24,7 @@ public class Senari extends BaseDriver {
 
 
     @Test
-    public void Test(){
+    public void Test() {
 
         driver.get("https://www.saucedemo.com/");
 
@@ -42,7 +44,7 @@ public class Senari extends BaseDriver {
         sauseLabBackpack.click();
         MyFunc.Wait(1);
 
-        WebElement sausLabBackackAddToCart= driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']"));
+        WebElement sausLabBackackAddToCart = driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']"));
         sausLabBackackAddToCart.click();
         MyFunc.Wait(1);
 
@@ -55,7 +57,7 @@ public class Senari extends BaseDriver {
         MyFunc.Wait(1);
 
 
-        WebElement sausLabBoltTshirtAddToCart= driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']"));
+        WebElement sausLabBoltTshirtAddToCart = driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']"));
         sausLabBoltTshirtAddToCart.click();
         MyFunc.Wait(1);
 
@@ -67,39 +69,44 @@ public class Senari extends BaseDriver {
         checkOut.click();
         MyFunc.Wait(1);
 
-        WebElement checkOutResult=driver.findElement(By.xpath("//button[@id='checkout']"));
+        WebElement checkOutResult = driver.findElement(By.xpath("//button[@id='checkout']"));
         checkOutResult.click();
         MyFunc.Wait(1);
 
-        WebElement firstname= driver.findElement(By.xpath("//input[@id='first-name']"));
+        WebElement firstname = driver.findElement(By.xpath("//input[@id='first-name']"));
         firstname.sendKeys("Mammad");
         MyFunc.Wait(1);
 
-        WebElement lastname= driver.findElement(By.xpath("//input[@id='last-name']"));
+        WebElement lastname = driver.findElement(By.xpath("//input[@id='last-name']"));
         lastname.sendKeys("Rzayev");
         MyFunc.Wait(1);
 
-        WebElement postCod= driver.findElement(By.xpath("//input[@id='postal-code']"));
+        WebElement postCod = driver.findElement(By.xpath("//input[@id='postal-code']"));
         postCod.sendKeys("AZ0121");
         MyFunc.Wait(1);
 
-        WebElement contunieBtn= driver.findElement(By.xpath("//input[@id='continue']"));
+        WebElement contunieBtn = driver.findElement(By.xpath("//input[@id='continue']"));
         contunieBtn.click();
         MyFunc.Wait(1);
 
-        WebElement price1=driver.findElement(By.xpath("//div[@class='inventory_item_price']"));
-        System.out.println(price1.getText());
+        List<WebElement> prices = driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
+
+        double total = 0;
+        for (WebElement we : prices) {
+            System.out.println("we = " + we.getText());
+            // replaceAll ile [^0-9.,]
+            total = total + Double.parseDouble(we.getText().substring(1));// 1 den etibaren sona qeder al
+        }
+        System.out.println("total = " + total);
         MyFunc.Wait(1);
 
-        WebElement price2=driver.findElement(By.xpath("(//div[@class='inventory_item_price'])[2]"));
-        System.out.println(price2.getText());
-        MyFunc.Wait(1);
+        WebElement totalItem = driver.findElement(By.xpath("//div[@class='summary_subtotal_label']"));
+        //System.out.println(totalItem.getText());
+        //System.out.println(totalItem.getText().replaceAll("[^0-9,.]", ""));
 
-        WebElement totalItem=driver.findElement(By.xpath("//div[@class='summary_subtotal_label']"));
-        System.out.println(totalItem.getText());
+        Double webTotalItem = Double.parseDouble(totalItem.getText().replaceAll("[^0-9,.]", ""));
 
-        Assert.assertTrue("Item Total duz deyil", totalItem.getText().contains("45.98"));
-
+        Assert.assertTrue("Item Total duz deyil", (total == webTotalItem));
 
 
         WaitClose();
