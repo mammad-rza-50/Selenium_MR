@@ -1,4 +1,5 @@
 package Gun04;
+
 import Utlity.BaseDriver;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,10 +10,10 @@ public class _02_CssSelector extends BaseDriver {
     // 1-Açılan sayfadaki kutucuğa mesajınızı yazını.
     // 2-Butona tıklatınız
     // 3-Butona basıldığında mesajınızın sayfada göründüğünü test ediniz.
-     // ikinci yol
+    // ikinci yol
 
     @Test
-    public void Test1 (){
+    public void Test1() {
 
         String myMessage = "Hello Selenium";
 
@@ -29,9 +30,9 @@ public class _02_CssSelector extends BaseDriver {
 
         // if-elsenin evezine
 
-        Assert.assertTrue("Axtarilan mesaj tapilmadi", msg.getText().equals(myMessage) );
-         // verilen deyer true ise hecne vermir,
+        Assert.assertTrue("Axtarilan mesaj tapilmadi", msg.getText().equals(myMessage));
+        // verilen deyer true ise hecne vermir,
 
-        WaitClose();
+       waitClose();
     }
 }

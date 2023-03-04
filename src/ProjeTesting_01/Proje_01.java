@@ -120,7 +120,7 @@ public class Proje_01 extends BaseDriver {
         MyFunc.Wait(2);
 
 
-        WaitClose();
+        waitClose();
     }
 
 }

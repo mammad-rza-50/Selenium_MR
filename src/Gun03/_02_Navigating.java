@@ -27,6 +27,6 @@ public class _02_Navigating extends BaseDriver {
 
         System.out.println(driver.getCurrentUrl()); // o anda bulunduğun URL bilgisini verir
 
-        WaitClose();
+        waitClose();
     }
 }

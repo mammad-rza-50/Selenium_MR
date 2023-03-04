@@ -25,6 +25,6 @@ public class Assigment6 extends BaseDriver {
         okBtn.click();
 
 
-        WaitClose();
+       waitClose();
     }
 }

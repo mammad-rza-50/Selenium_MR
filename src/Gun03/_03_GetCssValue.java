@@ -22,6 +22,6 @@ public class _03_GetCssValue extends BaseDriver {
         System.out.println( " getCssValue(font-size)= "+ inputValEnter.getCssValue("font-size"));
         System.out.println( " getCssValue(background)= "+ inputValEnter.getCssValue("background"));
 
-        WaitClose();
+      waitClose();
     }
 }

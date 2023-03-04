@@ -24,7 +24,7 @@ public class _02_SelectClass extends BaseDriver {
         System.out.println("ddMenu.getOptions.size = " + ddMenu.getOptions().size());
 
 
-        WaitClose();
+        waitClose();
 
     }
 

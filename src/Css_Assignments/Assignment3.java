@@ -26,6 +26,6 @@ public class Assignment3 extends BaseDriver {
         Assert.assertTrue("Gozlenen mesaj cixmadi", msg.isDisplayed());
         System.out.println(msg.getText());
 
-        WaitClose();
+        waitClose();
     }
 }

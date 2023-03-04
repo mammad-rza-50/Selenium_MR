@@ -26,7 +26,7 @@ public class Assigment3 extends BaseDriver {
         Assert.assertTrue("Gozlenen mesaj cixmadi", msg.getText().contains("We've got 317 results for teddy bear"));
         System.out.println(msg.getText());
 
-        WaitClose();
+        waitClose();
     }
 
 

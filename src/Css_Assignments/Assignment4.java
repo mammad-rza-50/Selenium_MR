@@ -37,6 +37,6 @@ public class Assignment4 extends BaseDriver {
 
         System.out.println("Result= " + resultMsg.getText());
 
-        WaitClose();
+        waitClose();
     }
 }

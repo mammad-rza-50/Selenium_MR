@@ -39,6 +39,6 @@ public class Assigment1 extends BaseDriver {
         Assert.assertTrue("Axtarilan userName tapilmadi", emailMsg.getText().contains("Testing@gmail.com"));
 
 
-        WaitClose();
+       waitClose();
     }
 }

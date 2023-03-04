@@ -44,6 +44,6 @@ public class Task_1 extends BaseDriver {
 
         WebElement btn7 = driver.findElement(By.cssSelector("select[id$='_4597']>:nth-child(4)"));
         goodBtn.click();
-        WaitClose();
+        waitClose();
     }
 }

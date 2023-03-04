@@ -29,6 +29,6 @@ public class Assignment2 extends BaseDriver {
         Assert.assertTrue("Gozlenilen mesaj cixmadi", msg.getText().equals("Your nearest branch closes in: 30m 5s"));
         System.out.println(msg.getText());
 
-        WaitClose();
+        waitClose();
     }
 }

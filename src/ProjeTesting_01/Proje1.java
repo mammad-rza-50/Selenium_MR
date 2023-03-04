@@ -113,7 +113,7 @@ public class Proje1 extends BaseDriver {
         WebElement create2 = driver.findElement(By.className("btn-primary"));
         create2.click();
 
-        WaitClose();
+        waitClose();
 
 
     }

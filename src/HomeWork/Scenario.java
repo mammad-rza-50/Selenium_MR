@@ -109,6 +109,6 @@ public class Scenario extends BaseDriver {
         Assert.assertTrue("Item Total duz deyil", (total == webTotalItem));
 
 
-        WaitClose();
+        waitClose();
     }
 }

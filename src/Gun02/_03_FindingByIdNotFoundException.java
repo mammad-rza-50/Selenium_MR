@@ -15,11 +15,9 @@ public class _03_FindingByIdNotFoundException {
 
         try {
             WebElement labelFirstName = driver.findElement(By.id("hataliLocator"));
-            //System.out.println("labelFirstName.getText() = " + labelFirstName.getText());
-        }
-        catch (Exception ex)
-        {
-            System.out.println("WebElement bulunamadı "+ex.getMessage());
+            System.out.println("labelFirstName.getText() = " + labelFirstName.getText());
+        } catch (Exception ex) {
+            System.out.println("WebElement bulunamadı " + ex.getMessage());
         }
 
         MyFunc.Wait(3);

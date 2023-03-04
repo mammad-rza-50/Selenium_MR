@@ -23,7 +23,7 @@ public class _01_FindingElements_tag extends BaseDriver {
             }
         }
 
-         WaitClose();
+         waitClose();
     }
 
 

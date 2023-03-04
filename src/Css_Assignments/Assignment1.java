@@ -4,7 +4,6 @@ import Utlity.BaseDriver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Assignment1 extends BaseDriver {
@@ -39,6 +38,6 @@ public class Assignment1 extends BaseDriver {
         Assert.assertTrue("Axtarilan userName tapilmadi", emailMsg.getText().contains("Testing@gmail.com"));
 
 
-        WaitClose();
+        waitClose();
     }
 }

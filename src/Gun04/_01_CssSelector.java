@@ -30,6 +30,6 @@ public class _01_CssSelector extends BaseDriver {
         else
             System.out.println("Test Fail");
 
-       WaitClose();
+       waitClose();
     }
 }

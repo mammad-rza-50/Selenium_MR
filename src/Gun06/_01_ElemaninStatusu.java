@@ -32,7 +32,7 @@ public class _01_ElemaninStatusu extends BaseDriver {
         
 
 
-        WaitClose();
+        waitClose();
 
     }
 }
