@@ -49,13 +49,11 @@ public class Question3 extends BaseDriver {
         MyFunc.Wait(1);
         actions.moveToElement(norway).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement oslo = driver.findElement(By.id("node1"));
         actions.clickAndHold(oslo).build().perform();
         MyFunc.Wait(1);
         actions.moveToElement(norway).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement fridtjofNansen = driver.findElement(By.id("node12"));
         actions.clickAndHold(fridtjofNansen).build().perform();
         MyFunc.Wait(1);
@@ -67,13 +65,11 @@ public class Question3 extends BaseDriver {
         MyFunc.Wait(1);
         actions.moveToElement(unitedKingdom).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement bigBen = driver.findElement(By.id("node9"));
         actions.clickAndHold(bigBen).build().perform();
         MyFunc.Wait(1);
         actions.moveToElement(unitedKingdom).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement london = driver.findElement(By.id("node3"));
         actions.clickAndHold(london).build().perform();
         MyFunc.Wait(1);
@@ -85,13 +81,11 @@ public class Question3 extends BaseDriver {
         MyFunc.Wait(1);
         actions.moveToElement(unitedStates).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement mississippi = driver.findElement(By.id("node21"));
         actions.clickAndHold(mississippi).build().perform();
         MyFunc.Wait(1);
         actions.moveToElement(unitedStates).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement johnFKennedy = driver.findElement(By.id("node16"));
         actions.clickAndHold(johnFKennedy).build().perform();
         MyFunc.Wait(1);
@@ -103,13 +97,11 @@ public class Question3 extends BaseDriver {
         MyFunc.Wait(1);
         actions.moveToElement(china).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement theForbiddenCity = driver.findElement(By.id("node10"));
         actions.clickAndHold(theForbiddenCity).build().perform();
         MyFunc.Wait(1);
         actions.moveToElement(china).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement mao = driver.findElement(By.id("node15"));
         actions.clickAndHold(mao).build().perform();
         MyFunc.Wait(1);
@@ -121,13 +113,11 @@ public class Question3 extends BaseDriver {
         MyFunc.Wait(1);
         actions.moveToElement(australia).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement queensland = driver.findElement(By.id("node11"));
         actions.clickAndHold(queensland).build().perform();
         MyFunc.Wait(1);
         actions.moveToElement(australia).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement nedKelly = driver.findElement(By.id("node17"));
         actions.clickAndHold(nedKelly).build().perform();
         MyFunc.Wait(1);
@@ -139,13 +129,11 @@ public class Question3 extends BaseDriver {
         MyFunc.Wait(1);
         actions.moveToElement(france).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement napoleonBonaparte = driver.findElement(By.id("node13"));
         actions.clickAndHold(napoleonBonaparte).build().perform();
         MyFunc.Wait(1);
         actions.moveToElement(france).release().build().perform();
         MyFunc.Wait(1);
-
         WebElement notreDame = driver.findElement(By.id("node8"));
         actions.clickAndHold(notreDame).build().perform();
         MyFunc.Wait(1);

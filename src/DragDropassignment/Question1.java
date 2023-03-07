@@ -28,6 +28,7 @@ public class Question1 extends BaseDriver {
 
         WebElement norway = driver.findElement(By.id("q1"));
         WebElement oslo = driver.findElement(By.id("a1"));
+        //actions.dragAndDrop(oslo,norway).build().perform(); // belede olur suret bir azzeifdir
         actions.clickAndHold(oslo).build().perform();
         Wait(1);
         actions.moveToElement(norway).release().build().perform();

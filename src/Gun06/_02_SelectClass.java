@@ -1,6 +1,7 @@
 package Gun06;
 
 import Utlity.BaseDriver;
+import Utlity.MyFunc;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,7 @@ public class _02_SelectClass extends BaseDriver {
     @Test
     public void Test1() {
 
+
         driver.get("https://www.amazon.com/");
 
         WebElement weMenu = driver.findElement(By.id("searchDropdownBox"));
@@ -20,6 +22,7 @@ public class _02_SelectClass extends BaseDriver {
         //  ddMenu.selectByValue("value deyeri"); // ister bunu
         //  ddMenu.selectByVisibleText("gorunen texti"); // ister bunu
 
+        MyFunc.Wait(2);
 
         System.out.println("ddMenu.getOptions.size = " + ddMenu.getOptions().size());
 

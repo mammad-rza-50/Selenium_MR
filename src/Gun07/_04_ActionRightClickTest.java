@@ -18,7 +18,7 @@ public class _04_ActionRightClickTest extends BaseDriver {
         driver.get("https://demoqa.com/buttons");
 
         WebElement element = driver.findElement(By.id("rightClickBtn"));
-        MyFunc.Wait(2);
+        MyFunc.Wait(1);
 
         Actions actions = new Actions(driver);
 
