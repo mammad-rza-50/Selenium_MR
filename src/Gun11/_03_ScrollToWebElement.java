@@ -19,7 +19,7 @@ public class _03_ScrollToWebElement extends BaseDriver {
         JavascriptExecutor js =(JavascriptExecutor)driver;
 
         WebElement element = driver.findElement(By.xpath("//a[text()='Read story']"));
-        js.executeScript("arguments[0].scrollIntoView(false);", element);
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
         //elemente qeder surusdur
 
         js.executeScript("arguments[0].click();", element);// html icinden elemente catir ve tiklatir

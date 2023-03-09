@@ -1,0 +1,22 @@
+package General_Selenium_Assignments;
+
+import Utlity.BaseDriver;
+
+public class GeneralSeleniumAssignments01 extends BaseDriver {
+
+
+//    Senaryo
+//1- https://testsheepnz.github.io/BasicCalculator.html sitesine gidiniz.
+//            2- random 100 e kadar 2 sayı üretiniz.
+//            3- Sayıları hesap makinesinin bütün fonksiyonları için çalıştırınız.
+//4- Sonuçları Assert ile kontrol ediniz.
+//5- Yukarıdaki işlemi 5 kez tekrar ettiriniz.
+//
+//2-
+//    Senaryo
+//1- https://www.youtube.com/ adresine gidiniz
+//            2- "Selenium" kelimesi ile video aratınız.
+//            3- Listelenen sonuçlarda 80 videoaya kadar lsiteyi uzatınız.
+//            4- Son videonun title ını yazdırınız.
+
+}

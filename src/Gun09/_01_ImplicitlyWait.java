@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
 
-public class ImplicitlyWait extends BaseDriver {
+public class _01_ImplicitlyWait extends BaseDriver {
 
     @Test
     public void Wait() {

@@ -37,11 +37,11 @@ public class _04_WindowsInput extends BaseDriver {
         for (String id : windowsIds) {
 
             System.out.println("id = " + id);
-
+            MyFunc.Wait(2);
             // bu an en son acilan sehife ana sehifeye kecmek ucun
             driver.switchTo().window(mainPageWindowId);// main page kecdim
 
-            MyFunc.Wait(12);
+            MyFunc.Wait(7);
 
             waitClose();
         }

@@ -72,9 +72,10 @@ public class _04_IntroAlert extends BaseDriver {
         MyFunc.Wait(2);
         //alert acilir
 
-        driver.switchTo().alert().sendKeys("Memmed");// alert qutucugunun Ok-ne tikla. baglansin
+        driver.switchTo().alert().sendKeys("Memmed");
+        MyFunc.Wait(5);// alert qutucugunun Ok-ne tikla. baglansin
         driver.switchTo().alert().accept();
-
+        MyFunc.Wait(5);
         WebElement txtActual = driver.findElement(By.id("prompt-demo"));
 
         Assert.assertTrue("Gozlenen yazi varmi", txtActual.getText().contains("Memmed"));

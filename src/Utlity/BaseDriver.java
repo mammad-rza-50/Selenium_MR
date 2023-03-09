@@ -24,12 +24,14 @@ public class BaseDriver {
 
         // outputtaki gerekmeyen logları kaldıracağız
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-//        ChromeOptions chromeOptions = new ChromeOptions();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(options);
 //        chromeOptions.setExperimentalOption("excludeSwitches", "disable-popup-blocking");
         // System.setProperty(EdgeDriverService.EDGE_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
         //  System.setProperty(SafariDriverService.SAFARI_DRIVER_EXE_PROPERTY,"true");
 
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
         //driver=new EdgeDriver();
         // driver=new SafariDriver();
 
