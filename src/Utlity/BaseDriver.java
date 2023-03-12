@@ -37,7 +37,7 @@ public class BaseDriver {
 
         // driver.manage().window().maximize(); // Ekranı max yapıyor.
 
-        Duration dr = Duration.ofSeconds(30);
+        Duration dr = Duration.ofSeconds(25);
         driver.manage().timeouts().pageLoadTimeout(dr);
         // Sadece tüm sayfanın kodlarının bilgisyarınıza inmesi süresiyle ilgili
         // bu eklenmezse Selenium sayfa yüklenene kadar (sonsuza) bekler.:
