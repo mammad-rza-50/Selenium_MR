@@ -8,7 +8,7 @@
      ImplicitlyWait:
      Tüm sayfadaki elemanlar için, elemanın locatorı sayfa içinde bulanabilir hale getirene kadar verilen bekleme süresi.
      Bütün elemanlar için geçerli ve eleman bulunduğunda kalan süreyi beklemez.NoSuchElement hatasını için verilen süre
-     kadar beler.
+     kadar bekler.
 
         Duration muhlet=Duration.ofSeconds(120);
         driver.manage().timeouts().implicitlyWait(muhlet);

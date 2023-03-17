@@ -16,7 +16,7 @@ public class _02_WindowSize extends BaseDriver {
 
         driver.manage().window().maximize();
         MyFunc.Wait(4);
-
+         //  olcu demekdir
         Dimension newSize = new Dimension(700,1200);
         driver.manage().window().setSize(newSize);
 
